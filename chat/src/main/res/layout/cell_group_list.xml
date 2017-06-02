@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_default_list_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_header"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+
+            <com.itutorgroup.tutorchat.phone.ui.common.groupimageview.AvatarView
+                android:id="@+id/avatar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/common_preference_item_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+

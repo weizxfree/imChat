@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:civ="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_windows">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_actionbar" />
+
+    <include
+        android:id="@+id/group_header"
+        layout="@layout/common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/group_header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_blackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <com.itutorgroup.tutorchat.phone.ui.CircleImageView
+                        android:id="@+id/imv_add_group_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_add_people"
+                        civ:border_color="@android:color/transparent"
+                        civ:border_width="0dp" />
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_header"
+                        android:layout_width="68dp"
+                        android:layout_height="68dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bg_default_avatar_detail_group" />
+
+                        <com.itutorgroup.tutorchat.phone.ui.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:src="@color/bg_actionbar"
+                            civ:border_color="@android:color/transparent"
+                            civ:border_width="0dp" />
+
+                        <com.itutorgroup.tutorchat.phone.ui.common.groupimageview.AvatarView
+                            android:id="@+id/avatar_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:src="@drawable/head_group_white" />
+                    </FrameLayout>
+
+                    <com.itutorgroup.tutorchat.phone.ui.CircleImageView
+                        android:id="@+id/imv_remove_group_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_remove_people"
+                        civ:border_color="@android:color/transparent"
+                        civ:border_width="0dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/groupMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_group_more"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/group_members"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.MyGridView
+                    android:id="@+id/mGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="5"
+                    android:padding="10dip"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dip" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_split_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider_margin_left_13"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:id="@+id/ll_manager_preference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/list_divider_margin_left_13"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                        android:id="@+id/groupName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:aiv_text="@string/group_name" />
+
+                    <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                        android:id="@+id/nav_group_announcement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:aiv_text="@string/group_notice" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_admin_preference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/list_divider_margin_left_13"
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                            android:id="@+id/nav_change_group_admin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:aiv_text="@string/change_group_admin" />
+
+                        <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                            android:id="@+id/nav_set_group_manager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:aiv_text="@string/set_group_manager" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_split_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_split_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider_margin_left_13"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                    android:id="@+id/messageNotDisturb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/message_without_interruption" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                    android:id="@+id/switch_top_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/top_chat" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                    android:id="@+id/saveAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/save_address_list" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_split_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_split_line_color" />
+
+            <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                android:id="@+id/nav_clear_chat_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aiv_text="@string/clear_chat_history" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="10dp"
+                android:background="@color/common_split_line_color" />
+
+            <Button
+                android:id="@+id/leaveGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/logout_button_bg"
+                android:text="@string/group_logout"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

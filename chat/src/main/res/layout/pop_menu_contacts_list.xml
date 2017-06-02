@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_arrow_up_pop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup"
+        android:divider="@drawable/linear_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_search_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:drawableLeft="@drawable/search_people"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/search_contacts"
+            android:textColor="@color/common_preference_item_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_create_group"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:drawableLeft="@drawable/create_group_chat"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/create_group"
+            android:textColor="@color/common_preference_item_text_color"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</LinearLayout>

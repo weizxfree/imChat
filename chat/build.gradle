@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+def keystorePassword = ''
+def keystoreAlias = ''
+def keystoreAliasPassword = ''
+// default keystore file, PLZ config file path in local.properties
+def keyFile = file('s.keystore.temp')
+
+Properties properties = new Properties()
+// local.properties file in the root director
+properties.load(project.rootProject.file('build.properties').newDataInputStream())
+def keystoreFilePath = properties.getProperty("keystore.path")
+
+if (keystoreFilePath) {
+    keystorePassword = properties.getProperty("keystore.password")
+    keystoreAlias = properties.getProperty("keystore.alias")
+    keystoreAliasPassword = properties.getProperty("keystore.alias_password")
+    keyFile = file(keystoreFilePath)
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.itutorgroup.tutorchat.phone"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 11
+        versionName "2.1.1.4"
+        multiDexEnabled true
+
+        manifestPlaceholders = [APP_NAME: "@string/app_name"]
+
+        ndk {
+            abiFilters "armeabi", "x86"
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt' // will not include NOTICE file
+        exclude 'META-INF/LICENSE.txt' // will not include LICENSE file
+    }
+
+    //签名
+    signingConfigs {
+        release {
+            storeFile keyFile
+            storePassword keystorePassword
+            keyAlias keystoreAlias
+            keyPassword keystoreAliasPassword
+        }
+    }
+
+    buildTypes {
+        release {}
+        debug {}
+        dev {}
+        stage {}
+        preProduct {}
+        product {}
+
+        buildTypes.all { type ->
+            if (!"product".equals(type.name)) {
+                type.applicationIdSuffix ".test"
+                type.manifestPlaceholders = [APP_NAME: "@string/app_name_test"]
+            }
+
+            type.minifyEnabled false
+//            if (!"debug".equals(type.name)) {
+            type.zipAlignEnabled true
+            type.proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            type.signingConfig signingConfigs.release
+//            }
+        }
+
+        if (applicationVariants != null) {
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def oldFile = output.outputFile
+                    if (oldFile != null) {
+                        def buildType = ''
+                        if (!variant.buildType.name.equals('product')) {
+                            buildType = '_' + variant.buildType.name
+                        }
+
+                        def apkName = 'com_itutorgroup_tutorchat_phone' + buildType + '.apk'
+                        output.outputFile = new File(oldFile.parent, apkName)
+                    }
+                }
+            }
+        }
+    }
+
+    lintOptions {
+        disable "ResourceType"
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.4'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.guava:guava:19.0-rc2'
+
+    // leak canary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    devCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    stageCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    preProductCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    productCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    // leak canary
+
+    compile 'com.jude:swipebackhelper:3.1.2'
+    compile project(path: ':LibMarsdaemon')
+}

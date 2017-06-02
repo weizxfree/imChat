@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.itutorgroup.tutorchat.phone">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+    <application
+        android:name="com.itutorgroup.tutorchat.phone.app.LPApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="${APP_NAME}"
+        android:largeHeap="true"
+        android:theme="@style/BaseTheme"
+        tools:replace="android:label">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56df8551e0f55af99700353e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="common" />
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="8bq7AMWa8IA4Q3WM8H9ya3" />
+        <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="gVcCeHvpnt5VHuy8atGOh2" />
+        <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="O3u0V39Owj6FNjoqQzfB13" />
+        <!-- 替换为第三方应用的APPSECRET -->
+
+
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.user.message" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.itutorgroup.tutorchat.phone.receiver.PushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <!-- APPID需要替换为相应的个推应用ID -->
+                <action android:name="com.igexin.sdk.action.8bq7AMWa8IA4Q3WM8H9ya3" />
+                <action android:name="${applicationId}.refresh_push_notification" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.account.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme.Transparent"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.SingleChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupMembersActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.ChatDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupNameUpdateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.account.ResetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme.Transparent"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.SystemMessageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.SystemMessageSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupAnnouncementActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.MessageRecipientsListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.search.SearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.search.SearchResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupSelectMemberAtActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.settings.AppDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.image.PhotoPickerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme.Black"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.image.PhotoPickerDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme.Black"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.image.ImagePreviewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme.Dark"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.ui.photo.crop.CropImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.ConversationTopSortActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.utils.permission.PermissionsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Permision.AppTheme.NoActionBar.Permissions"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.chat.DelayedSendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.group.GroupAnnouncementHistoryListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.settings.SettingLanguageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.settings.SettingFontSizeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.chat.ServiceAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.itutorgroup.tutorchat.phone.activity.settings.KeepLiveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/LiveActivityStyle" />
+
+
+        <receiver android:name="com.itutorgroup.tutorchat.phone.receiver.MainGlobalReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="${applicationId}.request_net_state" />
+                <action android:name="${applicationId}.message_received" />
+                <action android:name="${applicationId}.refresh_conversation_list" />
+                <action android:name="${applicationId}.system_notice" />
+                <action android:name="${applicationId}.receive_notice_msg" />
+                <action android:name="${applicationId}.object_update_patches" />
+                <action android:name="${applicationId}.tcp_online" />
+                <action android:name="${applicationId}.kick_out" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.itutorgroup.tutorchat.phone.receiver.KernelGlobalReceiver">
+            <intent-filter>
+                <action android:name="${applicationId}.user_logout" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+                <action android:name="com.igexin.sdk.action.8bq7AMWa8IA4Q3WM8H9ya3" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.itutorgroup.tutorchat.phone.receiver.NotificationClickReceiver"
+            android:exported="true" />
+
+        <service android:name="com.itutorgroup.tutorchat.phone.service.ReceiveService" />
+        <service android:name="com.itutorgroup.tutorchat.phone.service.GlobalService" />
+        <service android:name="com.itutorgroup.tutorchat.phone.service.UpdateService" />
+
+        <service
+            android:name="com.itutorgroup.tutorchat.phone.service.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service android:name="com.itutorgroup.tutorchat.phone.service.DataService" />
+
+        <service
+            android:name="com.itutorgroup.tutorchat.phone.utils.daemon.Service1"
+            android:process=":process1" />
+
+        <receiver
+            android:name="com.itutorgroup.tutorchat.phone.utils.daemon.Receiver1"
+            android:process=":process1" />
+        <service
+            android:name="com.itutorgroup.tutorchat.phone.utils.daemon.Service2"
+            android:process=":process2" />
+        <receiver
+            android:name="com.itutorgroup.tutorchat.phone.utils.daemon.Receiver2"
+            android:process=":process2" />
+
+    </application>
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <permission
+        android:name="getui.permission.GetuiService.${applicationId}"
+        android:protectionLevel="normal" />
+
+
+</manifest>

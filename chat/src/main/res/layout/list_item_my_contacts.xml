@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:civ="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/bg_default_list_item_selector"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/list_divider_margin_left_13"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider_bottom"
+        android:layout_below="@+id/divider_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/selector_checkbox_button"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_header"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+
+            <com.itutorgroup.tutorchat.phone.ui.CircleImageView
+                android:id="@+id/imv_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:src="@drawable/head_personal_blue"
+                civ:border_color="@android:color/transparent"
+                civ:border_width="0dp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/tv_english_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxWidth="170dp"
+                android:singleLine="true"
+                android:textColor="@color/common_preference_item_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_english_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_english_name"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/common_preference_item_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_english_name"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_conversation_summary"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/list_divider_margin_left_13"
+        android:visibility="gone" />
+</RelativeLayout>

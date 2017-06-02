@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itutorgroup.tutorchat.phone.ui.FaceRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/faceRelativeLayout"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="7dp">
+
+
+        <CheckBox
+            android:id="@+id/btn_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/voice_selector"
+            android:button="@null"
+            />
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/text_face_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <com.itutorgroup.tutorchat.phone.ui.MonitoringEditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_edt_chat"
+                    android:gravity="center_vertical"
+                    android:hint="Write something"
+                    android:paddingLeft="9dp"
+                    android:textCursorDrawable="@drawable/ic_text_cursor_blue"
+                    android:scrollbars="none"
+                    android:textColorHint="@color/gray">
+                    <requestFocus/>
+                </com.itutorgroup.tutorchat.phone.ui.MonitoringEditText>
+
+
+                <RadioButton
+                    android:id="@+id/btn_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/emoticons_selector"
+                    android:button="@null"/>
+
+            </LinearLayout>
+
+            <com.itutorgroup.tutorchat.phone.utils.voice.AudioRecorderButton
+                android:id="@+id/audioRecorderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:background="@drawable/bg_edt_chat"
+                android:text="@string/str_recorder_normal"
+                android:textColor="@color/common_preference_item_text_color"
+                android:textSize="16dp"
+                android:visibility="gone"
+                />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/more_function"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_split_line_color" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_input"
+        android:visibility="gone">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_othersChoose"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_input"
+        android:orientation="horizontal"
+        android:paddingBottom="26dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="26dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_photo"
+            style="@style/text_style_more_functions"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/more_picture"
+            android:text="@string/photo"
+            />
+
+        <TextView
+            android:id="@+id/text_camera"
+            style="@style/text_style_more_functions"
+            android:layout_marginLeft="42dp"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/more_camera"
+            android:text="@string/take_picture"
+            />
+
+
+        <TextView
+            android:id="@+id/text_send_delay"
+            style="@style/text_style_more_functions"
+            android:drawablePadding="12dp"
+            android:layout_marginLeft="42dp"
+            android:drawableTop="@drawable/send_out"
+            android:text="@string/send_delay_message"
+            />
+
+
+    </LinearLayout>
+
+
+</com.itutorgroup.tutorchat.phone.ui.FaceRelativeLayout>

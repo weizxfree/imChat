@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/header_count_layout"
+    >
+    <ImageView
+        android:id="@+id/noticeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notice"
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_toRightOf="@+id/noticeImageView"
+        android:layout_alignTop="@+id/noticeImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_point_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="9sp"
+        android:text="3"
+        />
+
+</RelativeLayout>

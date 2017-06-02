@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension" />
+        <attr name="mlpb_background_color" format="color" />
+        <attr name="mlpb_progress_color" format="color" />
+        <attr name="mlpb_progress_stoke_width" format="dimension" />
+        <attr name="mlpb_show_arrow" format="boolean" />
+        <attr name="mlpb_enable_circle_background" format="boolean" />
+        <attr name="mlpb_arrow_width" format="dimension" />
+        <attr name="mlpb_arrow_height" format="dimension" />
+
+        <attr name="mlpb_progress" format="integer" />
+        <attr name="mlpb_max" format="integer" />
+
+
+        <attr name="mlpb_progress_text_size" format="dimension" />
+        <attr name="mlpb_progress_text_color" format="color" />
+
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentControlView">
+        <attr name="scv_BackgroundSelectedColor" format="reference|color" />//选中segment的背景颜色
+        <attr name="scv_BackgroundNormalColor" format="reference|color" />//未选中segment的背景颜色
+        <attr name="scv_TextSelectedColor" format="reference|color" />//选中segment的文字颜色
+        <attr name="scv_TextNormalColor" format="reference|color" />//未选中segment的文字颜色
+        <attr name="scv_FrameColor" format="reference|color" />//segment边框的颜色
+        <attr name="scv_FrameWidth" format="reference|dimension" />//segment边框的宽度
+        <attr name="scv_FrameCornerRadius" format="reference|dimension" />//segment四个圆角的半径大小
+        <attr name="scv_TextSize" format="reference|dimension" />//文字大小
+        <attr name="scv_TextArray" format="reference" />//string数组，每一个string都会填充到一个segment中
+        <attr name="scv_SelectedIndex" format="reference|integer" />//默认选中的segment
+        <attr name="scv_SegmentPaddingHorizontal" format="reference|dimension" />
+        //每一个segment内部的水平padding
+        <attr name="scv_SegmentPaddingVertical" format="reference|dimension" />
+        每一个Segment的竖直方向的padding
+        <attr name="scv_Gradient" format="reference|boolean" />//Segment改变时是否使用颜色渐变效果
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AbsItemView">
+        <attr name="aiv_text" format="string" />
+        <attr name="aiv_summary" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchResultGroup">
+        <attr name="srg_type" format="enum">
+            <enum name="contact" value="0" />
+            <enum name="group" value="1" />
+            <enum name="message" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="right_clear_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="empty_icon" format="reference" />
+        <attr name="empty_str" format="string" />
+    </declare-styleable>
+</resources>

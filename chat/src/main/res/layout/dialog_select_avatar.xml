@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/bg_btn_dialog_top_radius"
+            android:gravity="center"
+            android:text="@string/take_picture"
+            android:textColor="@color/bg_actionbar"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@color/common_split_line_color" />
+
+        <TextView
+            android:id="@+id/tv_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/bg_btn_dialog_bottom_radius"
+            android:gravity="center"
+            android:text="@string/select_from_the_album"
+            android:textColor="@color/bg_actionbar"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_btn_dialog_single_item"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/bg_actionbar"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout> 

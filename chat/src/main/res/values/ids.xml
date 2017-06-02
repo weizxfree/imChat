@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scrollview" type="id" />
+    <item name="tag_bean" type="id" />
+    <item name="tag_position" type="id" />
+    <item name="tag_holder" type="id" />
+    <item name="tag_default" type="id" />
+    <item name="tag_text" type="id" />
+</resources>

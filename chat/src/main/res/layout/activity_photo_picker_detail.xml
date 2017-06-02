@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:background="#4F5A6F"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cc000000">
+
+            <CheckBox
+                android:id="@+id/cb_original"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:button="@drawable/picker_btn_checkable_radio_selector"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="@string/picker_original_image"
+                android:textColor="@color/actionbar_menu_text_color"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/cb_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:button="@drawable/picker_btn_checkable_selector"
+                android:paddingLeft="5dp"
+                android:text="@string/picker_select"
+                android:textColor="@color/actionbar_menu_text_color"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

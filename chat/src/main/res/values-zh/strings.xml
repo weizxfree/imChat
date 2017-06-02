@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_personal_center">个人中心</string>
+    <string name="title_tab_main_personal">个人</string>
+    <string name="title_conversation_connect_tcp">连接中…</string>
+    <string name="title_conversation_receive_offline_msg">接收中…</string>
+
+    <string name="load_more">上滑刷新列表</string>
+    <string name="finish_by_back_again">再按一次退出程序</string>
+    <string name="dialog_message_confirm_logout">确定退出登录？</string>
+    <string name="tip_home_wifi_disconnected">网络连接不可用</string>
+    <string name="tip_login_failed">登录失败</string>
+
+    <string name="title_reset_password">重置密码</string>
+    <string name="title_chat_desc">详细资料</string>
+    <string name="title_system_message">系统消息</string>
+    <string name="title_group_announcement">群公告</string>
+    <string name="title_message_recipients_list">消息接收人列表</string>
+    <string name="title_app_detail">应用信息</string>
+    <string name="title_photo_crop">图片裁剪</string>
+    <string name="title_top_chat_sort">置顶排序</string>
+
+    <string name="new_password">新密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="login_button_text">"登    录"</string>
+    <string name="tips_forget_login_password">亲爱的同仁，iChat统一使用电脑账号登陆，如果忘记电脑密码请联系当地GIS重置</string>
+
+    <string name="chat_desc_area">Area：%1$s</string>
+    <string name="chat_desc_name">姓名：%1$s</string>
+    <string name="chat_desc_professional_titles">职称：%1$s</string>
+    <string name="chat_desc_department">部门：%1$s</string>
+    <string name="chat_desc_mail">邮箱：%1$s</string>
+    <string name="chat_desc_extension">分机：%1$s</string>
+    <string name="chat_desc_address">地址：%1$s</string>
+
+    <string name="search">搜索</string>
+    <string name="send_message">发消息</string>
+    <string name="collection">收藏</string>
+    <string name="remove_collection">取消收藏</string>
+    <string name="already_collect">已收藏</string>
+    <string name="send">发送</string>
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="release">发布</string>
+    <string name="dialog_message_ok">我知道了</string>
+    <string name="done">完成</string>
+    <string name="confirm">确定</string>
+    <string name="approval">审批</string>
+    <string name="bulletin">公告</string>
+    <string name="common_successful_operation">操作成功</string>
+    <string name="common_failed_operation">操作失败</string>
+    <string name="common_successful_file_copy">已成功保存至%1$s目录下</string>
+    <string name="top_chat">置顶聊天</string>
+    <string name="remove_top_chat">取消置顶</string>
+    <string name="conversation_set_read">标为已读</string>
+    <string name="conversation_set_unread">标为未读</string>
+    <string name="message_without_interruption">消息免打扰</string>
+    <string name="shield_contact">屏蔽联系人</string>
+    <string name="chat_history">聊天记录历史</string>
+    <string name="ensure_remove_conversation">确认删除会话?</string>
+    <string name="remove_conversation">删除会话</string>
+    <string name="clear_chat_history">清空聊天记录</string>
+    <string name="message_clear_chat_history">该操作将会清空聊天记录，但仍会保留会话。</string>
+    <string name="app_version_name">版本号</string>
+    <string name="server_env">服务器环境</string>
+    <string name="local_env">多语言</string>
+    <string name="app_text_size">字体大小</string>
+    <string name="tip_send_group_announcement">该公告会通知全部成员，是否发布？</string>
+    <string name="tip_conversation_has_alt_me">[有人@我]</string>
+    <string name="tip_conversation_has_announcement">[有群公告]</string>
+    <string name="tip_conversation_has_draft">[草稿]</string>
+    <string name="chat_history_search_count">%1$d条相关的聊天记录</string>
+    <string name="withdrawal_message_by_self">你撤回了一条消息</string>
+    <string name="withdrawal_message_by_user">\"%1$s\" 撤回了一条消息</string>
+
+    <string name="new_message_alert">新消息提醒</string>
+    <string name="sound">声音</string>
+    <string name="vibrate">震动</string>
+    <string name="do_not_disturb">勿扰模式</string>
+    <string name="logout">退出登录</string>
+
+    <string name="tip_login_empty_account">请输入您的邮箱</string>
+    <string name="tip_login_error_account_format">邮箱格式不正确</string>
+    <string name="tip_login_empty_password">请输入您的密码</string>
+
+    <string name="group_name">群名称</string>
+    <string name="group_notice">群公告</string>
+    <string name="save_address_list">保存到通讯录</string>
+    <string name="group_members">Group members (%1$s)</string>
+    <string name="group_my_name">我在本群的名称</string>
+    <string name="group_logout">删除并退出</string>
+    <string name="contacts">联系人</string>
+    <string name="group_chat">群聊</string>
+    <string name="service_number">服务号</string>
+    <string name="search_chat_history">聊天记录</string>
+    <string name="footer_search_more">查看更多%1$s</string>
+    <string name="search_result">搜索结果</string>
+    <string name="select_one_group_chat">选择一个群聊</string>
+    <string name="edit">编辑</string>
+    <string name="tip_right_of_edit_group_announcement">只有群主和管理员可以编辑群公告</string>
+    <string name="group_announcement_empty">暂无公告</string>
+    <string name="search_result_contain">包含：%1$s</string>
+
+    <string name="personal_avatar">个人头像</string>
+    <string name="take_picture">拍照</string>
+    <string name="select_from_the_album">从相册选择</string>
+    <string name="title_activity_sure">确认</string>
+    <string name="title_activity_sure_number">确认(%1$d)</string>
+    <string name="yesterday">昨天</string>
+    <string name="date_am">上午 KK:mm</string>
+    <string name="date_pm">下午 KK:mm</string>
+
+    <string name="select_contacts_people">选择联系人</string>
+    <string name="add_group_people">添加群成员</string>
+    <string name="remove_group_people">移除群成员</string>
+    <string name="create_group">创建群聊</string>
+    <string name="group_chat_name">群聊名称</string>
+    <string name="set_group_manager">设置管理员</string>
+    <string name="change_group_admin">群主转让</string>
+    <string name="group_owner">群主</string>
+    <string name="group_manager">管理员</string>
+    <string name="tip_change_group_admin">该操作将转让群主</string>
+    <string name="help">帮助</string>
+    <string name="search_contacts">搜索联系人</string>
+    <string name="search_result_contacts_null">该用户不存在</string>
+    <string name="search_by_key">搜索：%1$s</string>
+    <string name="show_group_members_name">显示群成员名字</string>
+    <string name="group_member">群成员(%1$d)</string>
+    <string name="group_member_at">"选择@的人"</string>
+    <string name="message_recipients_state_unread">未读(%1$d)</string>
+    <string name="message_recipients_state_read">已读(%1$d)</string>
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+    <string name="str_recorder_want_up_cancel">手指上滑，取消发送</string>
+
+    <string name="copy_clipboard_done">已复制到剪切板</string>
+    <string name="search_no_result">找不到结果</string>
+    <string name="user_info_item_blank">暂无</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_success">刷新成功</string>
+    <string name="xlistview_header_hint_failt">刷新失败</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="chat_content_over_max">超过1000字</string>
+    <string name="tip_search_more_result">您的查询结果过多，只能显示10条联系人，请增加查询关键字，精确搜索联系人</string>
+    <string name="login_cause_token_failed">您的账号在另一台设备登录，请重新登录!</string>
+    <string name="login_cause_user_id_invalid">您的UserID无效，请重新登录!</string>
+    <string name="login_cause_aes_decrypt_failed">登录失效，请重新登录!</string>
+    <string name="login_cause_account_failed">账号登录失效，请重新登录!</string>
+    <string name="login_cause_env_changed">在当前页面重新登录才能切换环境，退出无效</string>
+    <string name="picker_all_image">所有图片</string>
+    <string name="picker_msg_maxi_capacity">已达到照片选择上限</string>
+    <string name="picker_photos_num">(%1$d)</string>
+    <string name="picker_msg_no_camera">没找到摄像头</string>
+    <string name="picker_image_and_video">图片和视频</string>
+    <string name="preview">预览</string>
+    <string name="preview_num">预览(%1$d)</string>
+    <string name="picker_select">选择</string>
+    <string name="picker_original_image_size">原图(%1$s)</string>
+    <string name="picker_original_image">原图</string>
+    <string name="save">保存</string>
+
+    <string name="photo">照片</string>
+
+    <string name="crop__saving">正在保存照片…</string>
+    <string name="crop__wait">请等待…</string>
+    <string name="crop__pick_error">无效的图片</string>
+    <string name="picker_commit_num">发送(%1$d/%2$d)</string>
+    <string name="title_image_preview">%1$d/%2$d</string>
+
+    <string name="permission">权限</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+
+    <string name="str_send_delay_content">消息内容</string>
+    <string name="str_send_delay">在指定日期发送</string>
+    <string name="str_send_now">立即发送</string>
+    <string name="str_send_time">发送时间</string>
+    <string name="send_delay_message">延时发送</string>
+
+    <string name="str_record">录音</string>
+    <string name="settings">设置</string>
+    <string name="string_help_text">当前应用缺少(%1$s)权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="tip_storage_access_failed">访问失败，请检查您的权限。</string>
+    <string name="tip_title_set_auto_start_permission">设置应用自启动权限</string>
+    <string name="tip_message_set_auto_start_permission">只有设置了自启动权限，才能不漏掉重要消息。</string>
+    <string name="str_delay_message_save">您需要保存草稿么</string>
+    <string name="str_client_version_update_not_force">有最新版本，您需要更新么？</string>
+    <string name="str_client_version_update_is_force">有新版本，你需要強制更新才能使用！</string>
+    <string name="str_client_version_update_title">版本更新</string>
+    <string name="str_client_version_update_is_downloading">新的版本正在下載中，请稍等</string>
+    <string name="msg_type_file">[文件]</string>
+    <string name="msg_type_pic">[图片]</string>
+    <string name="msg_type_voice">[语音]</string>
+    <string name="msg_notification_receive_file">%1$s 发来一个文件</string>
+    <string name="msg_notification_receive_pic">%1$s 发来一张图片</string>
+    <string name="msg_notification_receive_voice">%1$s 发来一段语音</string>
+    <string name="msg_notification_receive_alt_me">%1$s 在群聊中@了你</string>
+    <string name="msg_somebody_alt_you">有人@了你</string>
+    <string name="msg_notification_receive_group_announcement">你有一个群公告更新</string>
+    <string name="msg_operation_cancel">撤回</string>
+    <string name="msg_operation_cancel_fail">撤回失败</string>
+    <string name="msg_operation_delete">删除</string>
+    <string name="msg_operation_copy">复制</string>
+    <string name="msg_operation_read">已读未读</string>
+    <string name="msg_operation_pic_save">保存到本地</string>
+    <string name="msg_operation_voice_normal">切为扬声器模式</string>
+    <string name="msg_operation_voice_mode_incall">切为听筒模式</string>
+    <string name="msg_over_time_info">发送时间超过2分钟的消息，不能被撤回</string>
+    <string name="msg_new_come">有新消息</string>
+    <string name="msg_new_come_with_number">%1$s条新消息</string>
+    <string name="msg_status_is_read">已读</string>
+    <string name="msg_status_is_not_read">未读</string>
+    <string name="msg_content_alt_all">\&#064;所有人\n%1$s</string>
+    <string name="msg_content_cancel">%1$s撤回了一条消息</string>
+
+    <string name="voice_current_in_model_call">当前为听筒模式</string>
+    <string name="voice_switch_to_normal_model">已切换扬声器模式</string>
+    <string name="voice_time_is_too_short">录音时间太短,请重新录音</string>
+    <string name="record_time_will_end_show">您还有&#160;%1$s&#160;秒可以录音"</string>
+    <string name="record_time_is_too_short">&#160;&#160;&#160;&#160;&#160;&#160;录音时间太短&#160;&#160;&#160;&#160;&#160;&#160;</string>
+
+    <string name="msg_system_master_isself">你</string>
+    <string name="msg_system_join_group">%1$s邀请%2$s加入了群</string>
+    <string name="msg_system_remove_group">%1$s将%2$s移出了群</string>
+    <string name="msg_system_transfer_group">%1$s将群主转让给了%2$s</string>
+    <string name="msg_system_rename_group">%1$s将群名改为%2$s</string>
+    <string name="msg_system_setadmin_group">%1$s将%2$s设为管理员</string>
+    <string name="msg_system_canceladmin_group">%1$s取消了%2$s的管理员身份</string>
+    <string name="clipboard_paste_label">text</string>
+    <string name="pics_error">你选中的图片非法，请选择其他图片上传</string>
+    <string name="change_app_env_title">切换API环境</string>
+    <string name="change_app_env_content">需要重新登录，请谨慎操作。</string>
+    <string name="common_prompt_continue">继续</string>
+    <string name="tip_current_app_env">当前环境: %1$s</string>
+
+    <string name="app_downloading">正在下载更新</string>
+    <string name="app_download_notification_name">%1$s正在下载</string>
+    <string name="app_download_success">下载完成</string>
+    <string name="app_download_fail">下载失败</string>
+    <string name="app_download_memory_is_not_avalible">内存不足</string>
+    <string name="app_update_success">更新完成</string>
+    <string name="app_update_fail">更新失败</string>
+
+    <string name="delay_send_time_incorrect">选择时间在24小时内，请重新选择</string>
+    <string name="delay_send_title">延迟发送</string>
+    <string name="delay_send_cancel">取消发送</string>
+    <string name="delay_send_time">发送时间</string>
+    <string name="delay_time_select">yyyy年MM月dd日</string>
+
+    <string name="week_monday">星期一</string>
+    <string name="week_tuesday">星期二</string>
+    <string name="week_wednesday">星期三</string>
+    <string name="week_thursday">星期四</string>
+    <string name="week_friday">星期五</string>
+    <string name="week_saturday">星期六</string>
+    <string name="week_sunday">星期日</string>
+
+
+    <string name="group_manager_no_change">变更人员无效</string>
+
+    <string name="app_local_auto">跟随系统</string>
+    <string name="app_font_size_small">小</string>
+    <string name="app_font_size_normal">标准</string>
+    <string name="app_font_size_large">大</string>
+    <string name="app_font_size_huge">超大</string>
+
+    <string name="tip_empty_chat_message">你还没有会话消息</string>
+    <string name="tip_empty_contact">暂时没有联系人\n点击右上角添加联系人~</string>
+    <string name="tip_empty_group">空空如也，快快创建你的群聊\n或者加入伙伴的群聊吧</string>
+    <string name="tip_empty_service_account">哎哟，这里什么都没有~</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_windows"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/common_header" />
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+    <TextView
+        style="@style/text_style_send_delay"
+        android:text="@string/str_send_delay_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_split_line_color" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@color/white"
+            >
+
+            <FrameLayout
+                android:id="@+id/fl_group_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/edt_send_delay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:hint="@string/str_send_delay_content"
+                    android:clickable="false"
+                    android:gravity="top|left"
+                    android:paddingLeft="20dp"
+                    android:textCursorDrawable="@drawable/ic_text_cursor_blue"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/common_preference_item_text_color"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_split_line_color" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/common_split_line_color" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_admin_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider_margin_left_13"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                android:id="@+id/sendDelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aiv_text="@string/str_send_delay" />
+
+
+            <com.itutorgroup.tutorchat.phone.ui.common.item.SelectItemView
+                android:id="@+id/sendTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aiv_text="@string/str_send_time" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_split_line_color" />
+
+
+        <com.itutorgroup.tutorchat.phone.ui.TimeWheel.TimeScopeLayout
+            android:id="@+id/timeWheelview"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </com.itutorgroup.tutorchat.phone.ui.TimeWheel.TimeScopeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

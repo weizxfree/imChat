@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_poup_have_alt_message"
+        android:padding="5dp"
+        android:text="@string/msg_somebody_alt_you"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

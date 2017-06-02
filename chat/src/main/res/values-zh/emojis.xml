@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name = "emoji_lovely">[可爱]</string>,
+    <string name = "emoji_smile">[笑脸]</string>
+    <string name = "emoji_jiong">[囧]</string>
+    <string name = "emoji_angry">[生气]</string>
+    <string name = "emoji_grimace">[鬼脸]</string>
+    <string name = "emoji_drool">[花心]</string>
+    <string name = "emoji_terror">[害怕]</string>
+    <string name = "emoji_sweat">[我汗]</string>
+    <string name = "emoji_awkward">[尴尬]</string>
+    <string name = "emoji_hmmm">[哼哼]</string>
+    <string name = "emoji_melancholy">[忧郁]</string>
+    <string name = "emoji_grin">[呲牙]</string>
+    <string name = "emoji_flirtatious">[媚眼]</string>
+    <string name = "emoji_tired">[累]</string>
+    <string name = "emoji_puke">[苦逼]</string>
+    <string name = "emoji_sleep">[瞌睡]</string>
+    <string name = "emoji_tongue">[哎呀]</string>
+    <string name = "emoji_blind">[刺瞎]</string>
+    <string name = "emoji_cry">[哭]</string>
+    <string name = "emoji_excited">[激动]</string>
+    <string name = "emoji_sad">[难过]</string>
+    <string name = "emoji_shy">[害羞]</string>
+    <string name = "emoji_happy">[高兴]</string>
+    <string name = "emoji_rage">[愤怒]</string>
+    <string name = "emoji_kiss">[亲]</string>
+    <string name = "emoji_flyingkiss">[飞吻]</string>
+    <string name = "emoji_proud">[得意]</string>
+    <string name = "emoji_fear">[惊恐]</string>
+    <string name = "emoji_mask">[口罩]</string>
+    <string name = "emoji_surprise">[惊讶]</string>
+    <string name = "emoji_wronged">[委屈]</string>
+    <string name = "emoji_sickness">[生病]</string>
+    <string name = "emoji_heart">[红心]</string>
+    <string name = "emoji_heartbreak">[心碎]</string>
+    <string name = "emoji_rose">[玫瑰]</string>
+    <string name = "emoji_flower">[花]</string>
+    <string name = "emoji_alien">[外星人]</string>
+    <string name = "emoji_taurus">[金牛座]</string>
+    <string name = "emoji_gemini">[双子座]</string>
+    <string name = "emoji_cancer">[巨蟹座]</string>
+    <string name = "emoji_leo">[狮子座]</string>
+    <string name = "emoji_virgo">[处女座]</string>
+    <string name = "emoji_libra">[天平座]</string>
+    <string name = "emoji_scorpio">[天蝎座]</string>
+    <string name = "emoji_sagittarius">[射手座]</string>
+    <string name = "emoji_capricorn">[摩羯座]</string>
+    <string name = "emoji_aquarius">[水瓶座]</string>
+    <string name = "emoji_aries">[白羊座]</string>
+    <string name = "emoji_pisces">[双鱼座]</string>
+    <string name = "emoji_constellation">[星座]</string>
+    <string name = "emoji_boy">[男孩]</string>
+    <string name = "emoji_girl">[女孩]</string>
+    <string name = "emoji_lips">[嘴唇]</string>
+    <string name = "emoji_daddy">[爸爸]</string>
+    <string name = "emoji_mummy">[妈妈]</string>
+    <string name = "emoji_cloth">[衣服]</string>
+    <string name = "emoji_shoes">[皮鞋]</string>
+    <string name = "emoji_camera">[照相]</string>
+    <string name = "emoji_telephone">[电话]</string>
+    <string name = "emoji_stone">[石头]</string>
+    <string name = "emoji_victory">[胜利]</string>
+    <string name = "emoji_forbiddance">[禁止]</string>
+    <string name = "emoji_ski">[滑雪]</string>
+    <string name = "emoji_golf">[高尔夫]</string>
+    <string name = "emoji_tennis">[网球]</string>
+    <string name = "emoji_baseball">[棒球]</string>
+    <string name = "emoji_surf">[冲浪]</string>
+    <string name = "emoji_football">[足球]</string>
+    <string name = "emoji_fish">[小鱼]</string>
+    <string name = "emoji_interrogation">[问号]</string>
+    <string name = "emoji_exclamation">[叹号]</string>
+    <string name = "emoji_top">[顶]</string>
+    <string name = "emoji_write">[写字]</string>
+    <string name = "emoji_shirt">[衬衫]</string>
+    <string name = "emoji_littleflower">[小花]</string>
+    <string name = "emoji_tulip">[郁金香]</string>
+    <string name = "emoji_sunflower">[向日葵]</string>
+    <string name = "emoji_freshflower">[鲜花]</string>
+    <string name = "emoji_coconuttree">[椰树]</string>
+    <string name = "emoji_cactus">[仙人掌]</string>
+    <string name = "emoji_balloon">[气球]</string>
+    <string name = "emoji_bomb">[炸弹]</string>
+    <string name = "emoji_party">[喝彩]</string>
+    <string name = "emoji_scissor">[剪子]</string>
+    <string name = "emoji_bow">[蝴蝶结]</string>
+    <string name = "emoji_secret">[机密]</string>
+    <string name = "emoji_ring">[铃声]</string>
+    <string name = "emoji_hat">[女帽]</string>
+    <string name = "emoji_dress">[裙子]</string>
+    <string name = "emoji_barbershop">[理发店]</string>
+    <string name = "emoji_kimono">[和服]</string>
+    <string name = "emoji_bikini">[比基尼]</string>
+    <string name = "emoji_bag">[拎包]</string>
+    <string name = "emoji_film">[拍摄]</string>
+    <string name = "emoji_bell">[铃铛]</string>
+    <string name = "emoji_music">[音乐]</string>
+    <string name = "emoji_star">[心星]</string>
+    <string name = "emoji_pinkstar">[粉心]</string>
+    <string name = "emoji_cupid">[丘比特]</string>
+    <string name = "emoji_blow">[吹气]</string>
+    <string name = "emoji_saliva">[口水]</string>
+    <string name = "emoji_yes">[对]</string>
+    <string name = "emoji_no">[错]</string>
+    <string name = "emoji_tea">[绿茶]</string>
+    <string name = "emoji_bread">[面包]</string>
+    <string name = "emoji_noodle">[面条]</string>
+    <string name = "emoji_rice">[咖喱饭]</string>
+    <string name = "emoji_riceball">[饭团]</string>
+    <string name = "emoji_soup">[麻辣烫]</string>
+    <string name = "emoji_sushi">[寿司]</string>
+    <string name = "emoji_apple">[苹果]</string>
+    <string name = "emoji_orange">[橙子]</string>
+    <string name = "emoji_strawberry">[草莓]</string>
+    <string name = "emoji_melon">[西瓜]</string>
+    <string name = "emoji_persimmon">[柿子]</string>
+    <string name = "emoji_eyes">[眼睛]</string>
+    <string name = "emoji_ok">[好的]</string>
+
+
+
+
+
+
+
+
+
+</resources>

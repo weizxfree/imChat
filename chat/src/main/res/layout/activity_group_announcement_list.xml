@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+
+    <com.itutorgroup.tutorchat.phone.ui.SegmentControlView
+        android:id="@+id/segment_read_status"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:scv_BackgroundNormalColor="@android:color/white"
+        app:scv_BackgroundSelectedColor="@color/bg_actionbar"
+        app:scv_FrameColor="@color/bg_actionbar"
+        app:scv_FrameCornerRadius="3dp"
+        app:scv_FrameWidth="1dp"
+        app:scv_Gradient="true"
+        app:scv_SegmentPaddingVertical="5dp"
+        app:scv_SelectedIndex="0"
+        app:scv_TextArray="@array/message_recipients_state"
+        app:scv_TextNormalColor="@color/bg_actionbar"
+        app:scv_TextSelectedColor="@android:color/white"
+        app:scv_TextSize="15sp" />
+
+    <com.itutorgroup.tutorchat.phone.ui.xlistview.XListView
+        android:id="@+id/lv_group_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_windows"
+        android:divider="@color/transparent"
+        android:dividerHeight="10px" />
+</LinearLayout>

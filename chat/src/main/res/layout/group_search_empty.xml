@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_group_search_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/tv_search_contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/search_humen"
+            android:gravity="center"
+            android:text="@string/contacts"
+            android:textColor="@color/text_color_conversation_summary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_search_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/search_group"
+            android:gravity="center"
+            android:text="@string/group_chat"
+            android:textColor="@color/text_color_conversation_summary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_search_chat_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/search_chat"
+            android:gravity="center"
+            android:text="@string/search_chat_history"
+            android:textColor="@color/text_color_conversation_summary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/search_bg" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_windows"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/common_header" />
+
+    <com.itutorgroup.tutorchat.phone.ui.common.edittext.ClearEditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edt_search_recipients_list"
+        android:drawableLeft="@drawable/search_gray"
+        android:drawablePadding="10dp"
+        android:hint="@string/search"
+        android:lines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#CCD0D9"
+        android:textColorHint="#DDDDDD"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/linear_divider" />
+
+    <ListView
+        android:id="@+id/lv_recipients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_windows"
+        android:divider="@drawable/list_divider_margin_left_13"
+        android:dividerHeight="1px" />
+
+
+</LinearLayout>

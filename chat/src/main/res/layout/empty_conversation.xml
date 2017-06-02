@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.itutorgroup.tutorchat.phone.ui.common.EmptyView
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:empty_icon="@drawable/ic_empty_chat_message"
+        app:empty_str="@string/tip_empty_chat_message" />
+</FrameLayout>

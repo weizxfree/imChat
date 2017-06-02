@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="tab_bar_height">40dp</dimen>
+    <dimen name="tab_bar_my_height">168dp</dimen>
+
+    <dimen name="actionbar_height">40dp</dimen>
+    <dimen name="actionbar_title_size">18sp</dimen>
+
+    <dimen name="HintTextSize">14sp</dimen>
+</resources>

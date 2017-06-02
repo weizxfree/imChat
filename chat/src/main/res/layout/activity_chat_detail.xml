@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_actionbar" />
+
+    <include
+        android:id="@+id/group_header"
+        layout="@layout/common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/group_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.itutorgroup.tutorchat.phone.ui.common.UserInfoGroup
+                android:id="@+id/group_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_user_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_split_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/list_divider_margin_left_13"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                        android:id="@+id/chatSettingNotDisturb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:aiv_text="@string/message_without_interruption" />
+
+                    <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                        android:id="@+id/switch_top_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:aiv_text="@string/top_chat" />
+
+                    <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                        android:id="@+id/chatSettingShieldContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:aiv_text="@string/shield_contact" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                    android:id="@+id/nav_clear_chat_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/clear_chat_history" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+
+                <TextView
+                    android:id="@+id/btn_send_message"
+                    style="@style/DefaultButton"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/send_message"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/btn_collection"
+                    style="@style/DefaultButton"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/collection"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

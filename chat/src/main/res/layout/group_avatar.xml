@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:civ="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.itutorgroup.tutorchat.phone.ui.CircleImageView
+        android:id="@+id/imv_user_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/head_personal_blue"
+        android:visibility="gone"
+        civ:border_color="@android:color/transparent"
+        civ:border_width="0dp" />
+
+    <com.itutorgroup.tutorchat.phone.ui.common.groupimageview.GroupAvatar
+        android:id="@+id/img_group_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

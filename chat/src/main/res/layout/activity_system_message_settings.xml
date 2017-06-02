@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/top_chat" />
+
+                <include layout="@layout/split_preference_item" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.SwitchItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/message_without_interruption" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/chat_history" />
+
+                <include layout="@layout/split_preference_item" />
+
+                <include layout="@layout/split_preference_item" />
+
+                <com.itutorgroup.tutorchat.phone.ui.common.item.NavItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:aiv_text="@string/clear_chat_history" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_split_line_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="date" tools:ignore="MissingTranslation">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+        <item>时</item>
+        <item>分</item>
+    </string-array>
+    <string-array name="message_recipients_state">
+        <item>@string/msg_status_is_not_read</item>
+        <item>@string/msg_status_is_read</item>
+    </string-array>
+    <string-array name="app_env_list" translatable="false">
+        <item>Dev</item>
+        <item>Stage</item>
+        <item>PreProduct</item>
+    </string-array>
+    <string-array name="locale_list_entry" translatable="false">
+        <item>@string/app_local_auto</item>
+        <item>简体中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="locale_list_value" translatable="false">
+        <item>zh_CN</item>
+        <item>en</item>
+    </string-array>
+    <string-array name="app_font_size_entry">
+        <item>@string/app_font_size_small</item>
+        <item>@string/app_font_size_normal</item>
+        <item>@string/app_font_size_large</item>
+        <item>@string/app_font_size_huge</item>
+    </string-array>
+    <string-array name="app_font_size_value" translatable="false">
+        <item>0.85</item>
+        <item>1</item>
+        <item>1.15</item>
+        <item>1.3</item>
+    </string-array>
+
+</resources>

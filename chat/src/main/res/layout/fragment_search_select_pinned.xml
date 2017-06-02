@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_windows">
+
+    <com.itutorgroup.tutorchat.phone.ui.common.PinnedSectionListView
+        android:id="@+id/lv_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/search_no_result"
+        android:textColor="#A7AEB0"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tip_current_letter"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <com.itutorgroup.tutorchat.phone.ui.common.SideBar
+        android:id="@+id/side_bar"
+        android:layout_width="30.0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center" />
+</FrameLayout>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<return_data>
+
+    <!--UserService-->
+    <item>
+        <code>100000</code>
+        <data>Sever error</data>
+    </item>
+    <item>
+        <code>100001</code>
+        <data>Account password error</data>
+    </item>
+    <item>
+        <code>100002</code>
+        <data>Account not synchronised</data>
+    </item>
+    <item>
+        <code>100003</code>
+        <data>Empty email</data>
+    </item>
+    <item>
+        <code>100004</code>
+        <data>Empty password</data>
+    </item>
+    <item>
+        <code>100005</code>
+        <data>Failed to create token</data>
+    </item>
+    <item>
+        <code>100006</code>
+        <data>Invalid user</data>
+    </item>
+    <item>
+        <code>100007</code>
+        <data>Invalid parameter</data>
+    </item>
+    <item>
+        <code>100008</code>
+        <data>Invalid profile photo</data>
+    </item>
+    <item>
+        <code>100009</code>
+        <data>Inexisted user</data>
+    </item>
+    <item>
+        <code>100010</code>
+        <data>Failed to get this user in the buffer</data>
+    </item>
+    <item>
+        <code>100011</code>
+        <data>Failed to get the buffer of all the users</data>
+    </item>
+    <item>
+        <code>100012</code>
+        <data>Wrong user account</data>
+    </item>
+
+    <!--UserContractService-->
+    <item>
+        <code>300000</code>
+        <data>System error</data>
+    </item>
+    <item>
+        <code>300001</code>
+        <data>Operator not found</data>
+    </item>
+    <item>
+        <code>300002</code>
+        <data>Buffer of user list search not created</data>
+    </item>
+    <item>
+        <code>300003</code>
+        <data>User list search error</data>
+    </item>
+    <item>
+        <code>300004</code>
+        <data>Group not found</data>
+    </item>
+    <item>
+        <code>300005</code>
+        <data>Operation type error</data>
+    </item>
+    <item>
+        <code>300006</code>
+        <data>Invalid operation ID</data>
+    </item>
+    <item>
+        <code>300007</code>
+        <data>Invalid contact ID</data>
+    </item>
+
+    <!--Connect-->
+    <item>
+        <code>200000</code>
+        <data>System error</data>
+    </item>
+    <item>
+        <code>200001</code>
+        <data>Connection service error</data>
+    </item>
+    <item>
+        <code>200002</code>
+        <data>Device not found</data>
+    </item>
+    <item>
+        <code>200003</code>
+        <data>Invalid device type</data>
+    </item>
+
+    <!--Group-->
+    <item>
+        <code>400000</code>
+        <data>Group system error</data>
+    </item>
+    <item>
+        <code>400001</code>
+        <data>Empty group name or member list</data>
+    </item>
+    <item>
+        <code>400002</code>
+        <data>Group not found</data>
+    </item>
+    <item>
+        <code>400003</code>
+        <data>You can't quit the group</data>
+    </item>
+    <item>
+        <code>400004</code>
+        <data>You haven't this right</data>
+    </item>
+    <item>
+        <code>400005</code>
+        <data>Invalid update</data>
+    </item>
+    <item>
+        <code>400006</code>
+        <data>Transfer information error</data>
+    </item>
+    <item>
+        <code>400007</code>
+        <data>Failed to publish group announcement</data>
+    </item>
+    <item>
+        <code>400008</code>
+        <data>Invalid group announcement ID</data>
+    </item>
+    <item>
+        <code>400009</code>
+        <data>The number of group member is limited in 1000, you can't add more person</data>
+    </item>
+
+    <!--ChatCache-->
+    <item>
+        <code>500000</code>
+        <data>Message sending error</data>
+    </item>
+    <item>
+        <code>500001</code>
+        <data>The group you select not found</data>
+    </item>
+    <item>
+        <code>500002</code>
+        <data>Invalid buffer ID</data>
+    </item>
+    <item>
+        <code>500003</code>
+        <data>Invalid buffer type</data>
+    </item>
+    <item>
+        <code>500004</code>
+        <data>Message sent but refused by receiver</data>
+    </item>
+
+    <!--MessageCenterService-->
+    <item>
+        <code>600001</code>
+        <data>Message content can't be empty</data>
+    </item>
+    <item>
+        <code>600002</code>
+        <data>Invalid message type</data>
+    </item>
+    <item>
+        <code>600003</code>
+        <data>Invalid message priority</data>
+    </item>
+    <item>
+        <code>600004</code>
+        <data>Invalid receiver</data>
+    </item>
+    <item>
+        <code>600005</code>
+        <data>Invalid receipt ID</data>
+    </item>
+    <item>
+        <code>600006</code>
+        <data>Invalid unread message ID</data>
+    </item>
+    <item>
+        <code>600007</code>
+        <data>Invalid message ID</data>
+    </item>
+    <item>
+        <code>600008</code>
+        <data>Invalid Badge</data>
+    </item>
+    <item>
+        <code>700000</code>
+        <data>Failed to get filter list</data>
+    </item>
+    <item>
+        <code>700001</code>
+        <data>Failed to add filtration authenrization</data>
+    </item>
+    <item>
+        <code>800000</code>
+        <data>Failed to get group definition list</data>
+    </item>
+    <item>
+        <code>800001</code>
+        <data>Failed to save group definition</data>
+    </item>
+    <item>
+        <code>800002</code>
+        <data>Failed to get group definition information</data>
+    </item>
+
+    <item>
+        <code>900001</code>
+        <data>File uploading error</data>
+    </item>
+    <item>
+        <code>900002</code>
+        <data>Failed to upload file</data>
+    </item>
+    <item>
+        <code>900003</code>
+        <data>File extenstion can't be empty</data>
+    </item>
+    <item>
+        <code>900004</code>
+        <data>File extention error</data>
+    </item>
+    <item>
+        <code>900005</code>
+        <data>File flow error</data>
+    </item>
+    <item>
+        <code>900006</code>
+        <data>Oversize file</data>
+    </item>
+    <item>
+        <code>900007</code>
+        <data>Inexisted file</data>
+    </item>
+    <item>
+        <code>900008</code>
+        <data>Invalid file</data>
+    </item>
+    <item>
+        <code>900009</code>
+        <data>Invalid file ID</data>
+    </item>
+    <item>
+        <code>900010</code>
+        <data>Invalid file MD5</data>
+    </item>
+
+    <!--HeaderCheck-->
+    <item>
+        <code>999001</code>
+        <data>Invalid UserID</data>
+    </item>
+    <item>
+        <code>999002</code>
+        <data>Invalid MessageDeviceType</data>
+    </item>
+    <item>
+        <code>999003</code>
+        <data>Invalid token</data>
+    </item>
+    <item>
+        <code>999004</code>
+        <data>Failed to verify token</data>
+    </item>
+    <item>
+        <code>999005</code>
+        <data>Invalid time stamp</data>
+    </item>
+    <item>
+        <code>999006</code>
+        <data>Invalid Type</data>
+    </item>
+    <item>
+        <code>999007</code>
+        <data>Failed to decipher AES</data>
+    </item>
+
+    <!--Log-->
+    <item>
+        <code>110001</code>
+        <data>Log content can't be empty</data>
+    </item>
+
+    <item>
+        <code>120001</code>
+        <data>Device type can't be empty</data>
+    </item>
+    <item>
+        <code>120002</code>
+        <data>Error in obtaining version update</data>
+    </item>
+    <item>
+        <code>130000</code>
+        <data>Setup error</data>
+    </item>
+    <item>
+        <code>130001</code>
+        <data>Empty dialog sort parameter</data>
+    </item>
+    <item>
+        <code>130002</code>
+        <data>Failed to get user setup</data>
+    </item>
+    <item>
+        <code>140000</code>
+        <data>Error in obtaining increment update</data>
+    </item>
+    <item>
+        <code>140001</code>
+        <data>Object name can't be empty</data>
+    </item>
+    <item>
+        <code>140002</code>
+        <data>Empty time stamp list</data>
+    </item>
+    <item>
+        <code>150001</code>
+        <data>Error in adding scheduled message</data>
+    </item>
+    <item>
+        <code>150002</code>
+        <data>Error in obtaining scheduled job list</data>
+    </item>
+    <item>
+        <code>150003</code>
+        <data>Error in modifying scheduled job</data>
+    </item>
+    <item>
+        <code>150004</code>
+        <data>Delayed message content can't be empty</data>
+    </item>
+    <item>
+        <code>150005</code>
+        <data>Receiver can't be empty</data>
+    </item>
+    <item>
+        <code>150006</code>
+        <data>Empty delay plan type</data>
+    </item>
+    <item>
+        <code>150007</code>
+        <data>Message type can't be empty</data>
+    </item>
+    <item>
+        <code>150008</code>
+        <data>Receiver type can't be empty</data>
+    </item>
+    <item>
+        <code>150009</code>
+        <data>Message execution time can't be empty</data>
+    </item>
+    <item>
+        <code>160000</code>
+        <data>System announcement error</data>
+    </item>
+    <item>
+        <code>160001</code>
+        <data>System announcement ID can't be empty</data>
+    </item>
+</return_data>

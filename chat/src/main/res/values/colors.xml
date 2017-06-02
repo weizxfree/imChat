@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="title_bar_color">#3399ff</color>
+    <color name="app_blackground">#348DED</color>
+    <color name="color_list_item_pressed">#e3e7f1</color>
+    <color name="color_list_item_disabled">#eef2f7</color>
+    <color name="color_list_item_top_chat">@color/bg_windows</color>
+    <color name="fold_line_color">#999999</color>
+    <color name="mine_text_color">#333333</color>
+    <color name="green_button">#65c913</color>
+    <color name="green_button_pressed">#884DD321</color>
+    <color name="blue_button">#348DED</color>
+    <color name="blue_button_pressed">#88348DED</color>
+    <color name="round_gray">#ededed</color>
+
+    <color name="progress_green_color">#99ffcc</color>
+    <color name="progress_blue_color">#99ccff</color>
+    <color name="progress_red_color">#ffcccc</color>
+    <color name="progress_gray_color">#999999</color>
+    <color name="progress_backgroud_color">#cccccc</color>
+    <color name="progress_current_color">#ff6666</color>
+    <color name="map_line_color">#cc0000</color>
+    <color name="dialog_line">#a0a0a0</color>
+    <color name="button_blue_color">#3399ff</color>
+    <color name="button_grey_color">#cccccc</color>
+    <color name="layout_grey_color">#fefefe</color>
+    <color name="listview_footer">#d5d5d5</color>
+    <color name="gray">#bcbcbc</color>
+    <color name="bottom_text_selected">#ffffff</color>
+    <color name="bottom_text_unselected">#82858b</color>
+    <color name="blue">#0000ff</color>
+    <color name="blueheight">#0000cd</color>
+    <color name="red">#dc143c</color>
+    <color name="gold">#ffeeff</color>
+    <color name="transparent">#00000000</color>
+    <color name="ginger">#ff9138</color>
+    <color name="deep_slategray">#d2d2d2</color>
+    <color name="slategray">#f0f0f0</color>
+
+    <color name="colorPrimary">@color/bg_actionbar</color>
+    <color name="colorPrimaryDark">@color/bg_actionbar</color>
+    <color name="colorAccent">@color/bg_actionbar</color>
+
+    <color name="bg_actionbar">#348DED</color>
+    <color name="bg_windows">#f6f7fb</color>
+    <!--<color name="bg_windows">#FF0000</color>-->
+    <color name="actionbar_text_color">@android:color/white</color>
+    <color name="actionbar_menu_text_color_normal">#e0f7fa</color>
+    <color name="actionbar_menu_text_color_pressed">#b3e5fc</color>
+    <color name="actionbar_menu_text_color_disabled">#88e0f7fa</color>
+    <color name="common_preference_item_text_color">#4F5A6F</color>
+    <color name="text_color_conversation_summary">#9BA5BA</color>
+    <color name="common_split_line_color">#dddddd</color>
+    <color name="bg_common_preference_pressed">#e0e9f5</color>
+
+    <color name="default_bg_btn_normal">#348DED</color>
+    <color name="default_bg_btn_pressed">#0E6BCF</color>
+    <color name="default_bg_btn_disabled">#1bbee2</color>
+
+    <color name="bg_dialog_option_pressed">#d6d6d6</color>
+    <color name="bg_dialog_weak_divider_line">#d8d8d8</color>
+    <color name="bg_dialog_important_dark">#434343</color>
+    <color name="bg_logout_color">#FF3434</color>
+    <color name="text_color_btn_already_collect">#7A8BAC</color>
+    <color name="text_color_chat_content">#B2B8C6</color>
+    <color name="text_color_announcement_content">#348CED</color>
+    <color name="text_color_chat_read">#a0afd2</color>
+    <color name="text_color_tip_forget_password_selected">#FA5A5A</color>
+    <color name="text_color_chat_date">#73B2B8C6</color>
+
+    <color name="picker_white">#ffffff</color>
+    <color name="picker_bg_floder_press">#bdbdbd</color>
+    <color name="hint_text_color">#ff999999</color>
+    <color name="last_msg_tv_color">#ffaaaaaa</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="bg_record_color">#14141F</color>
+    <color name="bg_record_cancel_text_color">#F74C4C</color>
+    <color name="text_color_time_send_delay">#333B4B</color>
+    <color name="text_color_time_group_announcement">#78849E</color>
+    <color name="text_color_new_message_poup_window">#7ED321</color>
+    <color name="translucent_background">#000000</color>
+    <color name="edit_text_unfocus_color">#ccd0d9</color>
+
+
+
+</resources>

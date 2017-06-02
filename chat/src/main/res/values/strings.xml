@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">TutorChat</string>
+    <string name="app_name_test" translatable="false">TutorChatTest</string>
+
+    <string name="title_personal_center">Me</string>
+    <string name="title_tab_main_personal">Me</string>
+    <string name="title_conversation_connect_tcp">Connecting…</string>
+    <string name="title_conversation_receive_offline_msg">Receiving…</string>
+
+    <string name="load_more">More...</string>
+    <string name="finish_by_back_again">Press again to leave</string>
+    <string name="dialog_message_confirm_logout">Are you sure to log off?</string>
+    <string name="tip_home_wifi_disconnected">Network unavailable</string>
+    <string name="tip_login_failed">Failed to login</string>
+
+    <string name="title_reset_password">Reset password</string>
+    <string name="title_chat_desc">Detail</string>
+    <string name="title_system_message">System Message</string>
+    <string name="title_group_announcement">Group Notice</string>
+    <string name="title_message_recipients_list">Message receiver list</string>
+    <string name="title_app_detail">APP Info</string>
+    <string name="title_photo_crop">Photo cut</string>
+    <string name="title_top_chat_sort">Sort the chats sticky on the top</string>
+    <string name="title_group_name" translatable="false">%1$s(%2$d)</string>
+
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="login_button_text">"Login"</string>
+    <string name="tips_forget_login_password">Dear colleague, please use computer account and password to log in. If you forget the password, please contact your GIS to reset.</string>
+
+    <string name="chat_desc_area">Area：%1$s</string>
+    <string name="chat_desc_name">Name：%1$s</string>
+    <string name="chat_desc_professional_titles">Title：%1$s</string>
+    <string name="chat_desc_department">Department：%1$s</string>
+    <string name="chat_desc_mail">Email：%1$s</string>
+    <string name="chat_desc_extension">Tel：%1$s</string>
+    <string name="chat_desc_address">Address：%1$s</string>
+
+    <string name="search">Search</string>
+    <string name="send_message">Message</string>
+    <string name="collection">Favorites</string>
+    <string name="remove_collection">Delete</string>
+    <string name="already_collect">Added</string>
+    <string name="send">Send</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="release">Publish</string>
+    <string name="dialog_message_ok">I see</string>
+    <string name="done">Done</string>
+    <string name="confirm">Confirm</string>
+    <string name="approval">Approve</string>
+    <string name="bulletin">Announcement</string>
+    <string name="common_successful_operation">Done</string>
+    <string name="common_failed_operation">Failed</string>
+    <string name="common_successful_file_copy">Saved under path %1$s</string>
+    <string name="top_chat">Sticky on Top</string>
+    <string name="remove_top_chat">Remove from Top</string>
+    <string name="conversation_set_read">Mark as Read</string>
+    <string name="conversation_set_unread">Mark as Unread</string>
+    <string name="message_without_interruption">Mute notifications</string>
+    <string name="shield_contact">Block</string>
+    <string name="chat_history">Chat History</string>
+    <string name="ensure_remove_conversation">Confirm to delete this conversation?</string>
+    <string name="remove_conversation">Delete conversation</string>
+    <string name="clear_chat_history">Clear chat history</string>
+    <string name="message_clear_chat_history">Chat history will be emptied, but the conservation is maintained.</string>
+    <string name="app_version_name">Version code</string>
+    <string name="server_env">Service Environment</string>
+    <string name="local_env">Language</string>
+    <string name="app_text_size">Text Size</string>
+    <string name="tip_send_group_announcement">Are you sure send to all members？</string>
+    <string name="tip_conversation_has_alt_me">[You were mentioned]</string>
+    <string name="tip_conversation_has_announcement">[Group announcement]</string>
+    <string name="tip_conversation_has_draft">[Draft]</string>
+    <string name="personal_department_position" translatable="false">%1$s - %2$s</string>
+    <string name="personal_department_read_status" translatable="false">%1$s - %2$s    %3$s</string>
+    <string name="chat_history_search_count">%1$d related messages</string>
+    <string name="withdrawal_message_by_self">You\'ve recalled a message.</string>
+    <string name="withdrawal_message_by_user">\"%1$s\" has recalled a message</string>
+
+    <string name="new_message_alert">New Message Alerts</string>
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="do_not_disturb">Do not disturb mode</string>
+    <string name="logout">Log Out</string>
+
+    <string name="hint_login_account" translatable="false">Email</string>
+    <string name="hint_password" translatable="false">Password</string>
+    <string name="forget_password" translatable="false">Forget password ?</string>
+
+    <string name="tip_login_empty_account">Please enter your email</string>
+    <string name="tip_login_error_account_format">Incorrect Email format</string>
+    <string name="tip_login_empty_password">Please enter your password</string>
+
+    <string name="group_name">Group Name</string>
+    <string name="group_notice">Group Notice</string>
+    <string name="save_address_list">Save to Contacts</string>
+    <string name="group_members">Group members (%1$s)</string>
+    <string name="group_my_name">My Alias in Group</string>
+    <string name="group_logout">Delete and Leave</string>
+    <string name="contacts">Contacts</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="service_number">Service Accounts</string>
+    <string name="search_chat_history">Chat History</string>
+    <string name="footer_search_more">More %1$s</string>
+    <string name="search_result">Search results</string>
+    <string name="select_one_group_chat">Select a Group</string>
+    <string name="edit">Edit</string>
+    <string name="tip_right_of_edit_group_announcement">Only the group owner and administrators can edit group announcement</string>
+    <string name="group_announcement_empty">No announcement</string>
+    <string name="search_result_contain">Contain：%1$s</string>
+
+    <string name="personal_avatar">Personal image</string>
+    <string name="take_picture">Take Photo</string>
+    <string name="select_from_the_album">Select from Album</string>
+    <string name="title_activity_sure">OK</string>
+    <string name="title_activity_sure_number">OK(%1$d)</string>
+    <string name="date_time_yesterday" translatable="false">HH:mm</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="date_am">KK:mm a</string>
+    <string name="date_pm">KK:mm a</string>
+
+    <string name="select_contacts_people">Select Contact</string>
+    <string name="add_group_people">Add group member</string>
+    <string name="remove_group_people">Remove group member</string>
+    <string name="create_group">Create group</string>
+    <string name="group_chat_name">Group name</string>
+    <string name="set_group_manager">Set up administrator</string>
+    <string name="change_group_admin">Ownership transfer</string>
+    <string name="group_owner">Group owner</string>
+    <string name="group_manager">Administrator</string>
+    <string name="tip_change_group_admin">Ownership will be transferred</string>
+    <string name="help">Help</string>
+    <string name="search_contacts">Search contact</string>
+    <string name="search_result_contacts_null">Inexisted user</string>
+    <string name="search_by_key">Search:%1$s</string>
+    <string name="show_group_members_name">On-screen Names</string>
+    <string name="group_member">Group member(%1$d)</string>
+    <string name="group_member_at">Select</string>
+    <string name="message_recipients_state_unread">Unread(%1$d)</string>
+    <string name="message_recipients_state_read">Read(%1$d)</string>
+    <string name="str_recorder_normal">Hold to Talk</string>
+    <string name="str_recorder_recording">Release to Send</string>
+    <string name="str_recorder_want_cancel">Release to cancel</string>
+    <string name="str_recorder_want_up_cancel">Slide up to cancel</string>
+
+    <string name="copy_clipboard_done">Copied Successfully</string>
+    <string name="search_no_result">No result</string>
+    <string name="user_info_item_blank">No Available</string>
+    <string name="xlistview_header_hint_normal">pull to refresh</string>
+    <string name="xlistview_header_hint_ready">release to refresh</string>
+    <string name="xlistview_header_hint_loading">loading...</string>
+    <string name="xlistview_header_last_time">last update time：</string>
+    <string name="xlistview_footer_hint_normal">more</string>
+    <string name="xlistview_footer_hint_ready">release to load more</string>
+    <string name="xlistview_header_hint_success">done</string>
+    <string name="xlistview_header_hint_failt">failed</string>
+    <string name="not_updated_yet">not updated yet</string>
+    <string name="updated_at">last update before %1$s</string>
+    <string name="updated_just_now">just now</string>
+    <string name="time_error">time error</string>
+    <string name="chat_content_over_max">Over 1000 words</string>
+    <string name="tip_search_more_result">Too many search results. Only 10 contacts will be displayed. Please add key word to search exactly</string>
+    <string name="login_cause_token_failed">Your account has been logged in on another device, please log in again</string>
+    <string name="login_cause_user_id_invalid">Invalid userID, please log in again</string>
+    <string name="login_cause_aes_decrypt_failed">Invalid login, please log in again</string>
+    <string name="login_cause_account_failed">Invalid account login, please log in again</string>
+    <string name="login_cause_env_changed">In the current page to log in to switch environment</string>
+    <string name="picker_all_image">ALL</string>
+    <string name="picker_msg_maxi_capacity">Select up to 9 images or videos</string>
+    <string name="picker_photos_num">(%1$d)</string>
+    <string name="picker_msg_no_camera">No camera</string>
+    <string name="picker_image_and_video">Images &amp; Videos</string>
+    <string name="preview">Preview</string>
+    <string name="preview_num">Preview(%1$d)</string>
+    <string name="picker_select">Select</string>
+    <string name="picker_original_image_size">Full Image(%1$s)</string>
+    <string name="picker_original_image">Full Image</string>
+    <string name="save">Save</string>
+
+    <string name="photo">Photos</string>
+
+    <string name="crop__saving">Saving…</string>
+    <string name="crop__wait">Waiting…</string>
+    <string name="crop__pick_error">Invalid image</string>
+    <string name="picker_commit_num">Send(%1$d/%2$d)</string>
+    <string name="title_image_preview">%1$d/%2$d</string>
+
+    <string name="permission">Permission</string>
+    <string name="no_permissions">Permission Manager</string>
+
+    <string name="str_send_delay_content">Message content</string>
+    <string name="str_send_delay">Send on the specified date</string>
+    <string name="str_send_now">Send now</string>
+    <string name="str_send_time">Send time</string>
+    <string name="send_delay_message">Send later</string>
+
+    <string name="str_record">Record</string>
+    <string name="settings">Settings</string>
+    <string name="string_help_text">Lack of %1$s permission. Please click "Settings" - "Permissions" to activate this permission.</string>
+    <string name="quit">Quit</string>
+    <string name="tip_storage_access_failed">Access failed, please verify your permission.</string>
+    <string name="tip_title_set_auto_start_permission">Activate auto-launch permission</string>
+    <string name="tip_message_set_auto_start_permission">Please activate auto-launch permission for this application if you don\'t want to miss any message</string>
+    <string name="str_delay_message_save">Do you want to save draft</string>
+    <string name="str_client_version_update_not_force">An update is released, do you want to install now？</string>
+    <string name="str_client_version_update_is_force">An update is released and needs to be installed now.</string>
+    <string name="str_client_version_update_title">Update</string>
+    <string name="str_client_version_update_is_downloading">The new version is under installation, please wait</string>
+    <string name="msg_type_file">[File]</string>
+    <string name="msg_type_pic">[Photo]</string>
+    <string name="msg_type_voice">[Audio]</string>
+    <string name="msg_notification_receive_file">%1$s sent you a file</string>
+    <string name="msg_notification_receive_pic">%1$s sent you an image</string>
+    <string name="msg_notification_receive_voice">%1$s sent you a voice message</string>
+    <string name="msg_notification_receive_alt_me">%1$s mentioned you in the group chat</string>
+    <string name="msg_somebody_alt_you">You were mentioned</string>
+    <string name="msg_notification_receive_group_announcement">You have a new group announcement update</string>
+    <string name="msg_operation_cancel">Recall</string>
+    <string name="msg_operation_cancel_fail">Failed to recall</string>
+    <string name="msg_operation_delete">Delete</string>
+    <string name="msg_operation_copy">Copy</string>
+    <string name="msg_operation_read">Read/Unread</string>
+    <string name="msg_operation_pic_save">Save to Phone</string>
+    <string name="msg_operation_voice_normal">Turn on speaker</string>
+    <string name="msg_operation_voice_mode_incall">Turn off speaker</string>
+    <string name="msg_over_time_info">You cannot recall a sent message after two minutes.</string>
+    <string name="msg_new_come">New message</string>
+    <string name="msg_new_come_with_number">%1$s new messages</string>
+    <string name="msg_status_is_read">Read</string>
+    <string name="msg_status_is_not_read">Unread</string>
+    <string name="msg_content_alt_all">\&#064;All\n%1$s</string>
+    <string name="msg_content_cancel">\"%1$s\" has recalled a message</string>
+
+    <string name="voice_current_in_model_call">Speaker mode off</string>
+    <string name="voice_switch_to_normal_model">Speaker mode on</string>
+    <string name="voice_time_is_too_short">Message too short, please record again</string>
+    <string name="record_time_will_end_show">%1$s seconds. left to record"</string>
+    <string name="record_time_is_too_short">&#160;&#160;&#160;&#160;&#160;&#160;Message too short&#160;&#160;&#160;&#160;&#160;&#160;</string>
+
+    <string name="msg_system_master_isself">You</string>
+    <string name="msg_system_join_group">%1$s has invited %2$s to join the group</string>
+    <string name="msg_system_remove_group">%1$s has removed %2$s from the group</string>
+    <string name="msg_system_transfer_group">%1$s has transferred ownership to %2$s</string>
+    <string name="msg_system_rename_group">%1$s has renamed the group as %2$s</string>
+    <string name="msg_system_setadmin_group">%1$s has set up %2$s as administrator</string>
+    <string name="msg_system_canceladmin_group">%1$s has removed %2$s from administrators</string>
+    <string name="clipboard_paste_label">text</string>
+    <string name="pics_error">This image is invalid, please select another image</string>
+    <string name="change_app_env_title">Change API address</string>
+    <string name="change_app_env_content">This operation require re-login.</string>
+    <string name="common_prompt_continue">Continue</string>
+    <string name="tip_current_app_env">Service Environment: %1$s</string>
+
+    <string name="app_downloading">Downloading update</string>
+    <string name="app_download_notification_name">downloading %1$s</string>
+    <string name="app_download_success"> downloaded</string>
+    <string name="app_download_fail"> download failed</string>
+    <string name="app_download_memory_is_not_avalible">Memory not enough</string>
+    <string name="app_update_success">update done</string>
+    <string name="app_update_fail">update failed</string>
+
+    <string name="delay_send_time_incorrect">The time selected should be within 24 hours, please select again</string>
+    <string name="delay_send_title">Send later</string>
+    <string name="delay_send_cancel">Cancel</string>
+    <string name="delay_send_time">Send time</string>
+    <string name="delay_time_select">yyyy/MM/dd</string>
+    <string name="group_manager_no_change">No changed</string>
+
+    <string name="week_monday">E</string>
+    <string name="week_tuesday">E</string>
+    <string name="week_wednesday">E</string>
+    <string name="week_thursday">E</string>
+    <string name="week_friday">E</string>
+    <string name="week_saturday">E</string>
+    <string name="week_sunday">E</string>
+
+    <string name="app_local_auto">Auto</string>
+    <string name="app_font_size_small">Small</string>
+    <string name="app_font_size_normal">Normal</string>
+    <string name="app_font_size_large">Large</string>
+    <string name="app_font_size_huge">Huge</string>
+
+    <string name="tip_empty_chat_message">No conversation message</string>
+    <string name="tip_empty_contact">No contact\nClick top right corner to add contact</string>
+    <string name="tip_empty_group">No group, hurry up to\ncreate your group chat or join friend\'s groups</string>
+    <string name="tip_empty_service_account">Oops, nothing here~</string>
+</resources>
